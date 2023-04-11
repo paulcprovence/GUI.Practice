@@ -1,0 +1,16 @@
+apply plugin: 'application'
+
+
+mainClassName = 'Main'
+
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    implementation "junit:junit:4.12"
+    implementation files('cls/')
+}
